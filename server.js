@@ -33,6 +33,8 @@ module.exports = function(opt) {
             status: 'ON',
             mem: process.memoryUsage(),
         };
+
+        console.log(manager);
     });
 
     router.get('/api/status', async (ctx, next) => {
